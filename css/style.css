@@ -165,7 +165,7 @@ main {
   margin-top: 0;
 }
 .callouts {
-  padding: 20px 15px;
+  padding: 20px 15px 25px;
 }
 
 .card__container {
@@ -230,4 +230,10 @@ main {
   color: #4d5d57;
   font-size: 0.85em;
   margin-top: 0;
+}
+
+@media (max-width: 25em) {
+  .footer__copyright {
+    margin-top: 20px;
+  }
 }
