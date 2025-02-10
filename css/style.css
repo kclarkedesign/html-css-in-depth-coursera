@@ -8,6 +8,25 @@ body {
   padding: 0;
   background-color: #f4f4f4;
 }
+
+.btn {
+  transition: ease-in-out 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
+.btn--primary {
+  background-color: #f4ce14;
+  color: #000000;
+  padding: 8px 16px;
+  border-radius: 16px;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+
 .container {
   display: grid;
   min-height: 50vh;
@@ -33,6 +52,24 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  transition: ease-in-out 0.3s;
+}
+
+@media (max-width: 30em) {
+  nav {
+    height: 0;
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+}
+/* nav.open {
+  height: 173px;
+} */
+
+@media (max-width: 30em) {
+  nav.open {
+    height: 173px;
+  }
 }
 
 nav ul {
@@ -127,6 +164,40 @@ main {
 .hero__card__title {
   margin-top: 0;
 }
+.callouts {
+  padding: 20px 15px;
+}
+
+.card__container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 20px;
+  max-width: 920px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 30em) {
+  .card__container {
+    max-width: 100%;
+    flex-basis: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+  }
+}
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 31%;
+}
+
+@media (max-width: 30em) {
+  .card {
+    width: 100%;
+  }
+}
 
 .footer__container {
   width: 100%;
@@ -141,24 +212,6 @@ main {
 
 .section-bg--primary {
   background-color: #495e57;
-}
-
-.btn {
-  transition: ease-in-out 0.3s;
-  display: inline-block;
-}
-
-.btn:hover {
-  opacity: 0.75;
-}
-
-.btn--primary {
-  background-color: #f4ce14;
-  color: #000000;
-  padding: 8px 16px;
-  border-radius: 16px;
-  text-decoration: none;
-  transition: ease-in-out 0.3s;
 }
 
 .footer__logo {
